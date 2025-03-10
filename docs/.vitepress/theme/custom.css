@@ -1,0 +1,17 @@
+.medium-zoom-overlay {
+  z-index: 200;
+}
+
+.medium-zoom-image--opened {
+  z-index: 201;
+}
+
+/* 确保图片在放大时可以覆盖所有元素 */
+.medium-zoom--opened .medium-zoom-overlay {
+  z-index: 200;
+}
+
+/* 调整放大后图片的位置，避免被侧边栏遮挡 */
+.medium-zoom-image.medium-zoom-image--opened {
+  z-index: 201;
+} 

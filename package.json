@@ -1,0 +1,37 @@
+{
+  "name": "cursor-pool-docs",
+  "version": "1.0.0",
+  "description": "Cursor Pool - 一个优化 Cursor 编辑器使用体验的账户管理工具。支持多账户管理、机器码重置、使用量统计等功能的官方文档。",
+  "keywords": [
+    "cursor",
+    "cursor-editor",
+    "account-manager",
+    "documentation",
+    "中文文档",
+    "账户管理",
+    "使用统计",
+    "机器码重置"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Sanyela/CursorPool_Clinet"
+  },
+  "author": "Cloxl",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.22"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "build": "npm run docs:build"
+  },
+  "dependencies": {
+    "medium-zoom": "^1.1.0",
+    "markdown-it-emoji": "^2.0.2",
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-toc-done-right": "^4.2.0"
+  }
+}
