@@ -104,7 +104,7 @@ export async function getUserInfo(): Promise<UserInfo> {
         if (response.status !== 200) {
             throw new ApiError(response.msg || '链接服务器失败')
         }
-        
+        console.log(response)
         return handleApiResponse(response)
     } catch (error) {
         // 如果已经是ApiError类型，直接抛出

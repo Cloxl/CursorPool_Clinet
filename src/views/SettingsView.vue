@@ -102,7 +102,10 @@ const handleChangePassword = async () => {
     message.error('两次输入的新密码不一致')
     return
   }
-  
+  if (!validatePassword(formValue.value.newPassword)) {
+    message.error('密码格式不正确')
+    return
+  }
   passwordChangeLoading.value = true
   try {
     await changePassword(
@@ -239,6 +242,10 @@ watch(() => cursorStore.showSelectFileModal, (newValue, oldValue) => {
   }
 })
 
+const validatePassword = (value: string): boolean => {
+  return /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]{6,20}$/.test(value)
+}
+
 // 在组件挂载时检查控制状态
 onMounted(async () => {
   // 初始化状态
@@ -371,7 +378,6 @@ onMounted(async () => {
                 :placeholder="messages[currentLang].settings.currentPassword"
                 maxlength="20"
                 minlength="6"
-                :allow-input="(value) => /^[a-zA-Z0-9]*$/.test(value)"
               />
             </n-form-item>
 
@@ -383,7 +389,6 @@ onMounted(async () => {
                 :placeholder="messages[currentLang].settings.newPassword"
                 maxlength="20"
                 minlength="6"
-                :allow-input="(value) => /^[a-zA-Z0-9]*$/.test(value)"
               />
             </n-form-item>
 
@@ -395,7 +400,6 @@ onMounted(async () => {
                 :placeholder="messages[currentLang].settings.confirmPassword"
                 maxlength="20"
                 minlength="6"
-                :allow-input="(value) => /^[a-zA-Z0-9]*$/.test(value)"
               />
             </n-form-item>
 

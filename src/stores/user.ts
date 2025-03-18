@@ -97,6 +97,7 @@ export const useUserStore = defineStore('user', () => {
     try {
       const response = await apiLogin(account, password, spread)
       if (response && response.token) {
+        console.log(response)
         await checkLoginStatus()
         return true
       }

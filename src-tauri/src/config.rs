@@ -84,8 +84,8 @@ impl Default for AppConfig {
     fn default() -> Self {
         Self {
             api: ApiConfig {
-                default_api_url: "https://pool.52ai.org/api".to_string(),
-                config_file_url: "https://cursorpool.oss-cn-guangzhou.aliyuncs.com/config.json".to_string(),
+                default_api_url: "http://127.0.0.1:8080/api".to_string(),//default_api_url: "https://pool.52ai.org/api".to_string(),
+                config_file_url: "http://127.0.0.1:8080/api/inbound/config".to_string(),//config_file_url: "https://cursorpool.oss-cn-guangzhou.aliyuncs.com/config.json".to_string(),
                 cursor_user_id: "user_01000000000000000000000000".to_string(),
                 public_endpoints: vec![
                     "/login".to_string(),
