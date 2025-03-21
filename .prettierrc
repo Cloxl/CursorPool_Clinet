@@ -1,0 +1,18 @@
+{
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["*.json5"],
+      "options": {
+        "quoteProps": "preserve",
+        "singleQuote": false
+      }
+    }
+  ],
+  "printWidth": 100,
+  "proseWrap": "never",
+  "semi": false,
+  "singleQuote": true,
+  "vueIndentScriptAndStyle": true,
+  "trailingComma": "all"
+}

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { NButton, NIcon } from 'naive-ui'
-import { SunnySharp, Moon } from '@vicons/ionicons5'
-import { useTheme } from '../composables/theme'
+  import { SunnySharp, Moon } from '@vicons/ionicons5'
+  import { useTheme } from '../composables/theme'
+  import { NButton, NIcon } from 'naive-ui'
 
-const { isDarkMode, toggleTheme } = useTheme()
+  const { isDarkMode, toggleTheme } = useTheme()
 </script>
 
 <template>
@@ -14,4 +14,4 @@ const { isDarkMode, toggleTheme } = useTheme()
       </n-icon>
     </template>
   </n-button>
-</template> 
+</template>

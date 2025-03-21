@@ -24,17 +24,17 @@ class Logger {
             message: error.message,
             file: matches[1],
             line: parseInt(matches[2]),
-            stack: stack
+            stack: stack,
           }
         }
       }
       return {
         message: error.message,
-        stack: stack
+        stack: stack,
       }
     }
     return {
-      message: error.toString()
+      message: error.toString(),
     }
   }
 
@@ -44,13 +44,13 @@ class Logger {
       await invoke('log_error', {
         message: errorInfo.message,
         file: options?.file || errorInfo.file,
-        line: options?.line || errorInfo.line
+        line: options?.line || errorInfo.line,
       })
-      
+
       // 如果有堆栈信息，额外记录
       if (errorInfo.stack) {
         await invoke('log_error', {
-          message: `Stack trace: ${errorInfo.stack}`
+          message: `Stack trace: ${errorInfo.stack}`,
         })
       }
     } catch (e) {
@@ -60,10 +60,10 @@ class Logger {
 
   static async warn(message: string, options?: LogOptions) {
     try {
-      await invoke('log_warn', { 
-        message, 
+      await invoke('log_warn', {
+        message,
         file: options?.file,
-        line: options?.line 
+        line: options?.line,
       })
     } catch (e) {
       console.error('Failed to log warning:', e)
@@ -72,7 +72,9 @@ class Logger {
 
   static async info(message: string) {
     try {
-      await invoke('log_info', { message })
+      await invoke('log_info', {
+        message,
+      })
     } catch (e) {
       console.error('Failed to log info:', e)
     }
@@ -94,4 +96,4 @@ class Logger {
   }
 }
 
-export default Logger 
+export default Logger

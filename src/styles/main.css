@@ -1,14 +1,13 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "JetBrains Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+/* Basic styles that can't be easily replaced with UnoCSS */
+html,
+body {
+  @apply m-0 p-0 h-full font-mono;
 }
 
 #app {
-  height: 100%;
+  @apply h-full;
 }
 
 .n-layout-scroll-container {
-  min-height: 100%;
+  @apply min-h-full;
 }

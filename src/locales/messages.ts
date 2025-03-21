@@ -4,7 +4,7 @@ export const messages = {
     menu: {
       dashboard: '概览',
       history: '操作记录',
-      settings: '设置'
+      settings: '设置',
     },
     dashboard: {
       deviceInfo: '设备信息',
@@ -40,7 +40,7 @@ export const messages = {
         2: '程序员',
         3: '工程师',
         4: '架构师',
-        5: '技术总监'
+        5: '技术总监',
       },
       newVersionAvailable: '发现新版本',
       currentVersion: '当前版本',
@@ -59,7 +59,7 @@ export const messages = {
       advancedModelUsage: '高级模型使用量',
       basicModelUsage: '普通模型使用量',
       cannotGetUsage: '无法链接cursor服务器, 请重启软件',
-      cursorHistoryDownload: 'Cursor 历史版本下载'
+      cursorHistoryDownload: 'Cursor 历史版本下载',
     },
     login: {
       title: '登录',
@@ -93,7 +93,7 @@ export const messages = {
       currentPassword: '当前密码',
       newPassword: '新密码',
       confirmPassword: '确认新密码',
-      about: '关于'
+      about: '关于',
     },
     history: {
       title: '操作记录',
@@ -106,7 +106,7 @@ export const messages = {
       datePlaceholder: '选择日期范围',
       clearHistory: '清除历史记录',
       clearSuccess: '历史记录已清除',
-      clearFailed: '清除历史记录失败'
+      clearFailed: '清除历史记录失败',
     },
     message: {
       pleaseInputActivationCode: '请输入激活码',
@@ -119,7 +119,7 @@ export const messages = {
       pleaseInputPassword: '请填写完整密码信息',
       passwordNotMatch: '两次输入的新密码不一致',
       passwordChangeSuccess: '密码修改成功',
-      passwordChangeFailed: '密码修改失败'
+      passwordChangeFailed: '密码修改失败',
     },
     systemControl: {
       title: '系统控制',
@@ -135,12 +135,12 @@ export const messages = {
         applyHookSuccess: '注入客户端成功',
         restoreHookSuccess: '恢复客户端成功',
         cursorRunning: 'Cursor进程正在运行, 请先关闭Cursor',
-        forceKillConfirm: '我已保存, 强制关闭'
+        forceKillConfirm: '我已保存, 强制关闭',
       },
       history: {
         applyHook: '注入客户端',
-        restoreHook: '恢复客户端'
-      }
+        restoreHook: '恢复客户端',
+      },
     },
     about: {
       title: '关于',
@@ -152,7 +152,7 @@ export const messages = {
     },
     language: {
       title: '语言设置',
-      switch: '切换语言'
+      switch: '切换语言',
     },
     common: {
       logout: '登出账户',
@@ -160,7 +160,8 @@ export const messages = {
       copyFailed: '复制失败',
       forceClose: '我已保存, 强制关闭',
       cursorRunning: 'Cursor 正在运行',
-      cursorRunningMessage: '检测到 Cursor 正在运行, 请保存尚未更改的项目再继续操作! 不保存会导致Cursor报错! 报错了请别联系客服!',
+      cursorRunningMessage:
+        '检测到 Cursor 正在运行, 请保存尚未更改的项目再继续操作! 不保存会导致Cursor报错! 报错了请别联系客服!',
       closingCursor: '正在关闭 Cursor...',
       forgotPassword: '忘记密码？',
       unknown: '未知',
@@ -170,7 +171,7 @@ export const messages = {
       success: '成功',
       failed: '失败',
       loading: '加载中...',
-      confirmRestart: '确定重启'
+      confirmRestart: '确定重启',
     },
     inbound: {
       title: '线路',
@@ -178,15 +179,15 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
+      defaultInbound: '默认线路',
+    },
   },
   'en-US': {
     appName: 'Cursor Pool',
     menu: {
       dashboard: 'Dashboard',
       history: 'History',
-      settings: 'Settings'
+      settings: 'Settings',
     },
     dashboard: {
       deviceInfo: 'Device Info',
@@ -222,7 +223,7 @@ export const messages = {
         2: 'Programmer',
         3: 'Engineer',
         4: 'Architect',
-        5: 'Technical Director'
+        5: 'Technical Director',
       },
       newVersionAvailable: '发现新版本',
       currentVersion: '当前版本',
@@ -230,7 +231,8 @@ export const messages = {
       later: '稍后更新',
       downloadNow: '立即下载',
       unusedCreditsWarning: 'Usage Reminder',
-      unusedCreditsMessage: 'You still have {count} advanced model usage credits left. Are you sure you want to switch accounts?',
+      unusedCreditsMessage:
+        'You still have {count} advanced model usage credits left. Are you sure you want to switch accounts?',
       confirmSwitch: 'Confirm',
       cancelSwitch: 'Cancel',
       ccStatus: 'CC Status',
@@ -241,7 +243,7 @@ export const messages = {
       advancedModelUsage: 'Advanced Model Usage',
       basicModelUsage: 'Basic Model Usage',
       cannotGetUsage: 'Cannot Get',
-      cursorHistoryDownload: 'Cursor History Versions Download'
+      cursorHistoryDownload: 'Cursor History Versions Download',
     },
     login: {
       title: 'Login',
@@ -265,7 +267,8 @@ export const messages = {
       userNotExists: 'This email is not registered, please register first',
       emailInvalid: 'Please enter a valid email address',
       emailUnsupported: 'This email domain is not supported',
-      passwordInvalid: 'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
+      passwordInvalid:
+        'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
     },
     settings: {
       activation: 'Activation',
@@ -275,7 +278,7 @@ export const messages = {
       currentPassword: 'Current Password',
       newPassword: 'New Password',
       confirmPassword: 'Confirm Password',
-      about: 'About'
+      about: 'About',
     },
     history: {
       title: 'Operation History',
@@ -288,7 +291,7 @@ export const messages = {
       datePlaceholder: 'Select Date Range',
       clearHistory: 'Clear History',
       clearSuccess: 'History cleared successfully',
-      clearFailed: 'Failed to clear history'
+      clearFailed: 'Failed to clear history',
     },
     message: {
       pleaseInputActivationCode: 'Please input activation code',
@@ -301,7 +304,7 @@ export const messages = {
       pleaseInputPassword: 'Please input all password fields',
       passwordNotMatch: 'New passwords do not match',
       passwordChangeSuccess: 'Password changed successfully',
-      passwordChangeFailed: 'Failed to change password'
+      passwordChangeFailed: 'Failed to change password',
     },
     systemControl: {
       title: 'System Control',
@@ -324,26 +327,27 @@ export const messages = {
         applyHookSuccess: 'Hook applied successfully',
         restoreHookSuccess: 'Hook restored successfully',
         cursorRunning: 'Cursor is running, please save your work before continuing!',
-        forceKillConfirm: 'I have saved, force close'
+        forceKillConfirm: 'I have saved, force close',
       },
       history: {
         disableUpdate: 'Desactivar actualización automática',
         restoreUpdate: 'Restaurar actualización automática',
         applyHook: 'Aplicar hook',
-        restoreHook: 'Restaurar hook'
-      }
+        restoreHook: 'Restaurar hook',
+      },
     },
     about: {
       title: 'About',
       version: 'Version',
       appName: 'Cursor Pool',
       copyright: 'Copyright',
-      license: 'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
+      license:
+        'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
       allRightsReserved: 'All Rights Reserved',
     },
     language: {
       title: 'Language Settings',
-      switch: 'Switch Language'
+      switch: 'Switch Language',
     },
     common: {
       logout: 'Logout',
@@ -351,7 +355,8 @@ export const messages = {
       copyFailed: 'Copy failed',
       forceClose: 'I have saved, force close',
       cursorRunning: 'Cursor is running',
-      cursorRunningMessage: 'Detected Cursor is running, please save the project that has not been changed before continuing!',
+      cursorRunningMessage:
+        'Detected Cursor is running, please save the project that has not been changed before continuing!',
       closingCursor: 'Closing Cursor...',
       forgotPassword: 'Forgot password?',
       unknown: 'Unknown',
@@ -361,7 +366,7 @@ export const messages = {
       success: 'Success',
       failed: 'Failed',
       loading: 'Loading...',
-      confirmRestart: 'Restart Now'
+      confirmRestart: 'Restart Now',
     },
     inbound: {
       title: '线路',
@@ -369,15 +374,15 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
+      defaultInbound: '默认线路',
+    },
   },
   'ja-JP': {
     appName: 'Cursor Pool',
     menu: {
       dashboard: 'ダッシュボード',
       history: '履歴',
-      settings: '設定'
+      settings: '設定',
     },
     dashboard: {
       deviceInfo: 'デバイス情報',
@@ -413,7 +418,7 @@ export const messages = {
         2: 'プログラマー',
         3: 'エンジニア',
         4: 'アーキテクト',
-        5: 'テクニカルディレクター'
+        5: 'テクニカルディレクター',
       },
       newVersionAvailable: '発見新バージョン',
       currentVersion: '現在のバージョン',
@@ -421,7 +426,8 @@ export const messages = {
       later: '後で更新',
       downloadNow: '今すぐダウンロード',
       unusedCreditsWarning: '使用確認',
-      unusedCreditsMessage: 'まだ {count} 回の高度なモデル使用回数が残っています。アカウントを切り替えてもよろしいですか？',
+      unusedCreditsMessage:
+        'まだ {count} 回の高度なモデル使用回数が残っています。アカウントを切り替えてもよろしいですか？',
       confirmSwitch: '確認',
       cancelSwitch: 'キャンセル',
       ccStatus: 'CC状態',
@@ -432,7 +438,7 @@ export const messages = {
       advancedModelUsage: '高级模型使用量',
       basicModelUsage: '普通模型使用量',
       cannotGetUsage: '无法获取',
-      cursorHistoryDownload: 'Cursor 履歴バージョン ダウンロード'
+      cursorHistoryDownload: 'Cursor 履歴バージョン ダウンロード',
     },
     login: {
       title: 'ログイン',
@@ -455,7 +461,8 @@ export const messages = {
       userNotExists: 'このメールアドレスは未登録です。先に登録してください',
       emailInvalid: '有効なメールアドレスを入力してください',
       emailUnsupported: 'このメールドメインは現在サポートされていません',
-      passwordInvalid: 'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
+      passwordInvalid:
+        'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
     },
     settings: {
       activation: 'アクティベーション',
@@ -465,7 +472,7 @@ export const messages = {
       currentPassword: '現在のパスワード',
       newPassword: '新しいパスワード',
       confirmPassword: '新しいパスワード確認',
-      about: 'バージョン情報'
+      about: 'バージョン情報',
     },
     history: {
       title: '操作履歴',
@@ -478,7 +485,7 @@ export const messages = {
       datePlaceholder: '選択日付範囲',
       clearHistory: '履歴をクリア',
       clearSuccess: '履歴が正常にクリアされました',
-      clearFailed: '履歴のクリアに失敗しました'
+      clearFailed: '履歴のクリアに失敗しました',
     },
     message: {
       pleaseInputActivationCode: 'アクティベーションコードを入力してください',
@@ -491,7 +498,7 @@ export const messages = {
       pleaseInputPassword: 'すべてのパスワード欄を入力してください',
       passwordNotMatch: '新しいパスワードが一致しません',
       passwordChangeSuccess: 'パスワードの変更に成功しました',
-      passwordChangeFailed: 'パスワードの変更に失敗しました'
+      passwordChangeFailed: 'パスワードの変更に失敗しました',
     },
     systemControl: {
       title: 'システム制御',
@@ -514,26 +521,27 @@ export const messages = {
         applyHookSuccess: 'フックを適用しました',
         restoreHookSuccess: 'フックを復元しました',
         cursorRunning: 'Cursorが実行中です。続行する前に作業を保存してください！',
-        forceKillConfirm: '保存しました、強制終了します'
+        forceKillConfirm: '保存しました、強制終了します',
       },
       history: {
         disableUpdate: '自動更新を無効化',
         restoreUpdate: '自動更新を復元',
         applyHook: 'フックを適用',
-        restoreHook: 'フックを復元'
-      }
+        restoreHook: 'フックを復元',
+      },
     },
     about: {
       title: 'バージョン情報',
       version: 'バージョン',
       appName: 'Cursor Pool',
       copyright: '著作権情報',
-      license: 'MITライセンスの下でオープンソース化。変更や配布の際は著作権表示を保持する必要があります。',
+      license:
+        'MITライセンスの下でオープンソース化。変更や配布の際は著作権表示を保持する必要があります。',
       allRightsReserved: '全著作権所有',
     },
     language: {
       title: '言語設定',
-      switch: '言語を切り替え'
+      switch: '言語を切り替え',
     },
     common: {
       logout: 'ログアウト',
@@ -541,10 +549,11 @@ export const messages = {
       copyFailed: 'コピーに失敗しました',
       forceClose: '保存しましたので、強制的に閉じます',
       cursorRunning: 'Cursor が動作中',
-      cursorRunningMessage: 'Detected Cursor is running, please save the project that has not been changed before continuing!',
+      cursorRunningMessage:
+        'Detected Cursor is running, please save the project that has not been changed before continuing!',
       closingCursor: 'Cursor を閉じています...',
       forgotPassword: 'パスワードを忘れた場合',
-      confirmRestart: 'Redémarrer maintenant'
+      confirmRestart: 'Redémarrer maintenant',
     },
     inbound: {
       title: '线路',
@@ -552,22 +561,22 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
+      defaultInbound: '默认线路',
+    },
   },
   'fr-FR': {
     appName: 'Cursor Pool',
     menu: {
       dashboard: 'Tableau de bord',
       history: 'Historique',
-      settings: 'Paramètres'
+      settings: 'Paramètres',
     },
     dashboard: {
       deviceInfo: 'Informations sur le périphérique',
       machineCode: 'Code de la machine',
       currentAccount: 'Compte actuel',
-      expiryDate: 'Date d\'expiration',
-      usageStats: 'Statistiques d\'utilisation',
+      expiryDate: "Date d'expiration",
+      usageStats: "Statistiques d'utilisation",
       advancedModel: 'Utilisation du modèle avancé',
       normalModel: 'Utilisation du modèle normal',
       quickActions: 'Actions rapides',
@@ -582,8 +591,8 @@ export const messages = {
       machineChangeFailed: 'Changement de machine échoué',
       userInfo: 'Informations utilisateur',
       level: 'Niveau de membre',
-      username: 'Nom d\'utilisateur',
-      expireTime: 'Date d\'expiration',
+      username: "Nom d'utilisateur",
+      expireTime: "Date d'expiration",
       dailyUsage: 'Utilisation quotidienne',
       cursorInfo: 'Informations sur le curseur',
       cursorAccount: 'Compte du curseur',
@@ -596,26 +605,27 @@ export const messages = {
         2: 'Programmeur',
         3: 'Ingénieur',
         4: 'Architecte',
-        5: 'Directeur technique'
+        5: 'Directeur technique',
       },
       newVersionAvailable: 'Découvrez la nouvelle version',
       currentVersion: 'Version actuelle',
       newVersion: 'Nouvelle version',
       later: 'Mettre à jour plus tard',
       downloadNow: 'Télécharger maintenant',
-      unusedCreditsWarning: 'Rappel d\'utilisation',
-      unusedCreditsMessage: 'Il vous reste {count} crédits d\'utilisation du modèle avancé. Êtes-vous sûr de vouloir changer de compte ?',
+      unusedCreditsWarning: "Rappel d'utilisation",
+      unusedCreditsMessage:
+        "Il vous reste {count} crédits d'utilisation du modèle avancé. Êtes-vous sûr de vouloir changer de compte ?",
       confirmSwitch: 'Confirmer',
       cancelSwitch: 'Annuler',
       ccStatus: 'État CC',
-      registerTime: 'Heure d\'inscription',
-      insufficientCredits: 'Crédits insuffisants, veuillez recharger d\'abord',
+      registerTime: "Heure d'inscription",
+      insufficientCredits: "Crédits insuffisants, veuillez recharger d'abord",
       email: 'Email',
       cpUsage: 'CP积分使用量',
       advancedModelUsage: '高级模型使用量',
       basicModelUsage: '普通模型使用量',
       cannotGetUsage: '无法获取',
-      cursorHistoryDownload: 'Télécharger les versions historiques de Cursor'
+      cursorHistoryDownload: 'Télécharger les versions historiques de Cursor',
     },
     login: {
       title: 'Connexion',
@@ -632,23 +642,24 @@ export const messages = {
       loginSuccess: 'Connexion réussie',
       loginFailed: 'Connexion échouée',
       noAccount: 'Pas de compte ?',
-      register: 'S\'inscrire maintenant',
+      register: "S'inscrire maintenant",
       hasAccount: 'Vous avez déjà un compte ? Connectez-vous',
       userExists: 'Cet email est déjà enregistré, passage en mode connexion',
-      userNotExists: 'Cet email n\'est pas enregistré, veuillez vous inscrire d\'abord',
+      userNotExists: "Cet email n'est pas enregistré, veuillez vous inscrire d'abord",
       emailInvalid: 'Veuillez entrer une adresse e-mail valide',
-      emailUnsupported: 'Ce domaine e-mail n\'est pas supporté',
-      passwordInvalid: 'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
+      emailUnsupported: "Ce domaine e-mail n'est pas supporté",
+      passwordInvalid:
+        'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
     },
     settings: {
       activation: 'Activation',
-      activationCode: 'Code d\'activation',
+      activationCode: "Code d'activation",
       activate: 'Activer',
       changePassword: 'Changer le mot de passe',
       currentPassword: 'Mot de passe actuel',
       newPassword: 'Nouveau mot de passe',
       confirmPassword: 'Confirmer le mot de passe',
-      about: 'À propos'
+      about: 'À propos',
     },
     history: {
       title: 'Historique des opérations',
@@ -659,22 +670,22 @@ export const messages = {
       time: 'Heure',
       operator: 'Opérateur',
       datePlaceholder: 'Sélectionner la plage de dates',
-      clearHistory: 'Vider l\'historique',
+      clearHistory: "Vider l'historique",
       clearSuccess: 'Historique vidé avec succès',
-      clearFailed: 'Échec de la vidage de l\'historique'
+      clearFailed: "Échec de la vidage de l'historique",
     },
     message: {
-      pleaseInputActivationCode: 'Veuillez saisir le code d\'activation',
+      pleaseInputActivationCode: "Veuillez saisir le code d'activation",
       activationSuccess: 'Activation réussie',
       activationFailed: 'Activation échouée',
-      pleaseInputEmail: 'Veuillez saisir l\'email',
+      pleaseInputEmail: "Veuillez saisir l'email",
       addSuccess: 'Ajout réussi',
       switchSuccess: 'Changement de compte effectué: {email}',
       deleteSuccess: 'Suppression réussie',
       pleaseInputPassword: 'Veuillez remplir tous les champs de mot de passe',
       passwordNotMatch: 'Les mots de passe ne correspondent pas',
       passwordChangeSuccess: 'Mot de passe modifié avec succès',
-      passwordChangeFailed: 'Échec de la modification du mot de passe'
+      passwordChangeFailed: 'Échec de la modification du mot de passe',
     },
     systemControl: {
       title: 'Contrôle système',
@@ -697,37 +708,39 @@ export const messages = {
         applyHookSuccess: 'Hook aplicado con éxito',
         restoreHookSuccess: 'Hook restaurado con éxito',
         cursorRunning: 'Cursor en ejecución, por favor guarde su trabajo antes de continuar!',
-        forceKillConfirm: 'He guardado, forzar cierre'
+        forceKillConfirm: 'He guardado, forzar cierre',
       },
       history: {
         disableUpdate: 'Desactivar actualización automática',
         restoreUpdate: 'Restaurar actualización automática',
         applyHook: 'Aplicar hook',
-        restoreHook: 'Restaurar hook'
-      }
+        restoreHook: 'Restaurar hook',
+      },
     },
     about: {
       title: 'À propos',
       version: 'Version',
       appName: 'Cursor Pool',
       copyright: 'Copyright',
-      license: 'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
+      license:
+        'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
       allRightsReserved: 'All Rights Reserved',
     },
     language: {
       title: 'Paramètres de langue',
-      switch: 'Basculer la langue'
+      switch: 'Basculer la langue',
     },
     common: {
       logout: 'Se déconnecter',
       copySuccess: 'Copie réussie',
       copyFailed: 'Échec de la copie',
-      forceClose: 'J\'ai sauvegardé, fermer forcément',
-      cursorRunning: 'Cursor en cours d\'exécution',
-      cursorRunningMessage: 'Détecté que le Cursor est en cours d\'exécution, veuillez enregistrer le projet qui n\'a pas été modifié avant de continuer!',
+      forceClose: "J'ai sauvegardé, fermer forcément",
+      cursorRunning: "Cursor en cours d'exécution",
+      cursorRunningMessage:
+        "Détecté que le Cursor est en cours d'exécution, veuillez enregistrer le projet qui n'a pas été modifié avant de continuer!",
       closingCursor: 'Fermeture du Cursor...',
       forgotPassword: 'Mot de passe oublié?',
-      confirmRestart: 'Redémarrer maintenant'
+      confirmRestart: 'Redémarrer maintenant',
     },
     inbound: {
       title: '线路',
@@ -735,15 +748,15 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
+      defaultInbound: '默认线路',
+    },
   },
   'de-DE': {
     appName: 'Cursor Pool',
     menu: {
       dashboard: 'Übersicht',
       history: 'Verlauf',
-      settings: 'Einstellungen'
+      settings: 'Einstellungen',
     },
     dashboard: {
       deviceInfo: 'Geräteinformationen',
@@ -779,7 +792,7 @@ export const messages = {
         2: 'Programmierer',
         3: 'Ingenieur',
         4: 'Architekt',
-        5: 'Technischer Direktor'
+        5: 'Technischer Direktor',
       },
       newVersionAvailable: 'Neue Version entdeckt',
       currentVersion: 'Aktuelle Version',
@@ -794,7 +807,7 @@ export const messages = {
       advancedModelUsage: '高级模型使用量',
       basicModelUsage: '普通模型使用量',
       cannotGetUsage: '无法获取',
-      cursorHistoryDownload: 'Cursor Historische Versionen Herunterladen'
+      cursorHistoryDownload: 'Cursor Historische Versionen Herunterladen',
     },
     login: {
       title: 'Anmeldung',
@@ -817,7 +830,8 @@ export const messages = {
       userNotExists: 'Diese E-Mail ist nicht registriert, bitte registrieren Sie sich zuerst',
       emailInvalid: 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
       emailUnsupported: 'Dieser E-Mail-Domain ist derzeit keine Unterstützung verfügbar',
-      passwordInvalid: 'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
+      passwordInvalid:
+        'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
     },
     settings: {
       activation: 'Aktivierung',
@@ -827,7 +841,7 @@ export const messages = {
       currentPassword: 'Aktuelles Passwort',
       newPassword: 'Neues Passwort',
       confirmPassword: 'Passwort bestätigen',
-      about: 'Über'
+      about: 'Über',
     },
     history: {
       title: 'Operationsverlauf',
@@ -840,7 +854,7 @@ export const messages = {
       datePlaceholder: 'Datumsbereich auswählen',
       clearHistory: 'Verlauf löschen',
       clearSuccess: 'Verlauf erfolgreich gelöscht',
-      clearFailed: 'Verlauf löschen fehlgeschlagen'
+      clearFailed: 'Verlauf löschen fehlgeschlagen',
     },
     message: {
       pleaseInputActivationCode: 'Bitte Aktivierungscode eingeben',
@@ -853,7 +867,7 @@ export const messages = {
       pleaseInputPassword: 'Bitte alle Passwortfelder ausfüllen',
       passwordNotMatch: 'Die Passwörter stimmen nicht überein',
       passwordChangeSuccess: 'Passwort erfolgreich geändert',
-      passwordChangeFailed: 'Passwortänderung fehlgeschlagen'
+      passwordChangeFailed: 'Passwortänderung fehlgeschlagen',
     },
     systemControl: {
       title: 'Systemsteuerung',
@@ -876,26 +890,27 @@ export const messages = {
         applyHookSuccess: 'Hook aplicado con éxito',
         restoreHookSuccess: 'Hook restaurado con éxito',
         cursorRunning: 'Cursor en ejecución, por favor guarde su trabajo antes de continuar!',
-        forceKillConfirm: 'He guardado, forzar cierre'
+        forceKillConfirm: 'He guardado, forzar cierre',
       },
       history: {
         disableUpdate: 'Desactivar actualización automática',
         restoreUpdate: 'Restaurar actualización automática',
         applyHook: 'Aplicar hook',
-        restoreHook: 'Restaurar hook'
-      }
+        restoreHook: 'Restaurar hook',
+      },
     },
     about: {
       title: 'Über',
       version: 'Version',
       appName: 'Cursor Pool',
       copyright: 'Copyright',
-      license: 'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
+      license:
+        'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
       allRightsReserved: 'All Rights Reserved',
     },
     language: {
       title: 'Spracheinstellungen',
-      switch: 'Sprache wechseln'
+      switch: 'Sprache wechseln',
     },
     common: {
       logout: 'Abmelden',
@@ -903,10 +918,11 @@ export const messages = {
       copyFailed: 'Kopie fehlgeschlagen',
       forceClose: 'Ich habe gespeichert, erzwingend schließen',
       cursorRunning: 'Cursor läuft',
-      cursorRunningMessage: 'Detected Cursor is running, please save the project that has not been changed before continuing!',
+      cursorRunningMessage:
+        'Detected Cursor is running, please save the project that has not been changed before continuing!',
       closingCursor: 'Cursor schließen...',
       forgotPassword: 'Mot de passe oublié?',
-      confirmRestart: 'Jetzt neu starten'
+      confirmRestart: 'Jetzt neu starten',
     },
     inbound: {
       title: '线路',
@@ -914,15 +930,15 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
+      defaultInbound: '默认线路',
+    },
   },
   'ko-KR': {
     appName: 'Cursor Pool',
     menu: {
       dashboard: '대시보드',
       history: '기록',
-      settings: '설정'
+      settings: '설정',
     },
     dashboard: {
       deviceInfo: '장치 정보',
@@ -958,7 +974,7 @@ export const messages = {
         2: '프로그래머',
         3: '엔지니어',
         4: '아키텍트',
-        5: '기술 이사'
+        5: '기술 이사',
       },
       newVersionAvailable: '새로운 버전 발견',
       currentVersion: '현재 버전',
@@ -973,7 +989,7 @@ export const messages = {
       advancedModelUsage: '高级模型使用量',
       basicModelUsage: '普通模型使用量',
       cannotGetUsage: '无法获取',
-      cursorHistoryDownload: 'Cursor 이전 버전 다운로드'
+      cursorHistoryDownload: 'Cursor 이전 버전 다운로드',
     },
     login: {
       title: '로그인',
@@ -996,7 +1012,8 @@ export const messages = {
       userNotExists: '등록되지 않은 이메일입니다. 먼저 회원가입을 해주세요',
       emailInvalid: '유효한 이메일 주소를 입력하세요',
       emailUnsupported: '이 이메인은 현재 지원되지 않습니다',
-      passwordInvalid: 'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
+      passwordInvalid:
+        'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
     },
     settings: {
       activation: '활성화',
@@ -1006,7 +1023,7 @@ export const messages = {
       currentPassword: '현재 비밀번호',
       newPassword: '새 비밀번호',
       confirmPassword: '비밀번호 확인',
-      about: '정보'
+      about: '정보',
     },
     history: {
       title: '작업 기록',
@@ -1019,7 +1036,7 @@ export const messages = {
       datePlaceholder: '날짜 범위 선택',
       clearHistory: '기록 지우기',
       clearSuccess: '기록이 성공적으로 지워졌습니다',
-      clearFailed: '기록 지우기 실패'
+      clearFailed: '기록 지우기 실패',
     },
     message: {
       pleaseInputActivationCode: '활성화 코드를 입력해주세요',
@@ -1032,7 +1049,7 @@ export const messages = {
       pleaseInputPassword: '모든 비밀번호 필드를 입력해주세요',
       passwordNotMatch: '비밀번호가 일치하지 않습니다',
       passwordChangeSuccess: '비밀번호 변경 성공',
-      passwordChangeFailed: '비밀번호 변경 실패'
+      passwordChangeFailed: '비밀번호 변경 실패',
     },
     systemControl: {
       title: '시스템 제어',
@@ -1055,26 +1072,27 @@ export const messages = {
         applyHookSuccess: '훅이 적용되었습니다',
         restoreHookSuccess: '훅이 복원되었습니다',
         cursorRunning: 'Cursor가 실행 중입니다. 계속하기 전에 작업을 저장하세요!',
-        forceKillConfirm: '저장했습니다, 강제 종료'
+        forceKillConfirm: '저장했습니다, 강제 종료',
       },
       history: {
         disableUpdate: '자동 업데이트 비활성화',
         restoreUpdate: '자동 업데이트 복원',
         applyHook: '훅 적용',
-        restoreHook: '훅 복원'
-      }
+        restoreHook: '훅 복원',
+      },
     },
     about: {
       title: '정보',
       version: '버전',
       appName: 'Cursor Pool',
       copyright: 'Copyright',
-      license: 'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
-      allRightsReserved: 'All Rights Reserved',      
+      license:
+        'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
+      allRightsReserved: 'All Rights Reserved',
     },
     language: {
       title: '언어 설정',
-      switch: '언어 변경'
+      switch: '언어 변경',
     },
     common: {
       logout: '로그아웃',
@@ -1085,7 +1103,7 @@ export const messages = {
       cursorRunningMessage: '변경되지 않은 프로젝트를 저장한 후 계속하세요!',
       closingCursor: 'Cursor 닫는 중...',
       forgotPassword: '비밀번호를 잊으셨나요?',
-      confirmRestart: '지금 재시작'
+      confirmRestart: '지금 재시작',
     },
     inbound: {
       title: '线路',
@@ -1093,15 +1111,15 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
+      defaultInbound: '默认线路',
+    },
   },
   'ru-RU': {
     appName: 'Cursor Pool',
     menu: {
       dashboard: 'Обзор',
       history: 'История',
-      settings: 'Настройки'
+      settings: 'Настройки',
     },
     dashboard: {
       deviceInfo: 'Информация об устройстве',
@@ -1137,7 +1155,7 @@ export const messages = {
         2: 'Программист',
         3: 'Инженер',
         4: 'Архитектор',
-        5: 'Технический директор'
+        5: 'Технический директор',
       },
       newVersionAvailable: 'Обнаружена новая версия',
       currentVersion: 'Текущая версия',
@@ -1152,7 +1170,7 @@ export const messages = {
       advancedModelUsage: '高级模型使用量',
       basicModelUsage: '普通模型使用量',
       cannotGetUsage: '无法获取',
-      cursorHistoryDownload: 'Скачать исторические версии Cursor'
+      cursorHistoryDownload: 'Скачать исторические версии Cursor',
     },
     login: {
       title: 'Вход',
@@ -1175,7 +1193,8 @@ export const messages = {
       userNotExists: 'Этот email не зарегистрирован, пожалуйста, зарегистрируйтесь',
       emailInvalid: 'Введите действительный адрес электронной почты',
       emailUnsupported: 'Этот email-домен не поддерживается',
-      passwordInvalid: 'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
+      passwordInvalid:
+        'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
     },
     settings: {
       activation: 'Активация',
@@ -1185,7 +1204,7 @@ export const messages = {
       currentPassword: 'Текущий пароль',
       newPassword: 'Новый пароль',
       confirmPassword: 'Подтвердить пароль',
-      about: 'О программе'
+      about: 'О программе',
     },
     history: {
       title: 'История операций',
@@ -1198,7 +1217,7 @@ export const messages = {
       datePlaceholder: 'Выберите период',
       clearHistory: 'Очистить историю',
       clearSuccess: 'История успешно очищена',
-      clearFailed: 'Не удалось очистить историю'
+      clearFailed: 'Не удалось очистить историю',
     },
     message: {
       pleaseInputActivationCode: 'Пожалуйста, введите код активации',
@@ -1211,7 +1230,7 @@ export const messages = {
       pleaseInputPassword: 'Пожалуйста, заполните все поля пароля',
       passwordNotMatch: 'Пароли не совпадают',
       passwordChangeSuccess: 'Пароль успешно изменен',
-      passwordChangeFailed: 'Изменение пароля не удалось'
+      passwordChangeFailed: 'Изменение пароля не удалось',
     },
     systemControl: {
       title: 'Управление системой',
@@ -1234,26 +1253,27 @@ export const messages = {
         applyHookSuccess: 'Hook aplicado con éxito',
         restoreHookSuccess: 'Hook restaurado con éxito',
         cursorRunning: 'Cursor en ejecución, por favor guarde su trabajo antes de continuar!',
-        forceKillConfirm: 'He guardado, forzar cierre'
+        forceKillConfirm: 'He guardado, forzar cierre',
       },
       history: {
         disableUpdate: 'Desactivar actualización automática',
         restoreUpdate: 'Restaurar actualización automática',
         applyHook: 'Aplicar hook',
-        restoreHook: 'Restaurar hook'
-      }
+        restoreHook: 'Restaurar hook',
+      },
     },
     about: {
       title: 'О программе',
       version: 'Версия',
       appName: 'Cursor Pool',
       copyright: 'Copyright',
-      license: 'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
-      allRightsReserved: 'All Rights Reserved',      
+      license:
+        'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
+      allRightsReserved: 'All Rights Reserved',
     },
     language: {
       title: 'Язык',
-      switch: 'Изменить язык'
+      switch: 'Изменить язык',
     },
     common: {
       logout: 'Выйти',
@@ -1261,10 +1281,11 @@ export const messages = {
       copyFailed: 'Копирование не удалось',
       forceClose: 'Я сохранил, закройте принудительно',
       cursorRunning: 'Cursor в работе',
-      cursorRunningMessage: 'Detected Cursor is running, please save the project that has not been changed before continuing!',
+      cursorRunningMessage:
+        'Detected Cursor is running, please save the project that has not been changed before continuing!',
       closingCursor: 'Закрытие Cursor...',
       forgotPassword: 'Забыли пароль?',
-      confirmRestart: 'Перезапустить сейчас'
+      confirmRestart: 'Перезапустить сейчас',
     },
     inbound: {
       title: '线路',
@@ -1272,15 +1293,15 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
+      defaultInbound: '默认线路',
+    },
   },
   'es-AR': {
     appName: 'Cursor Pool',
     menu: {
       dashboard: 'Panel',
       history: 'Historial',
-      settings: 'Configuración'
+      settings: 'Configuración',
     },
     dashboard: {
       deviceInfo: 'Información del dispositivo',
@@ -1316,7 +1337,7 @@ export const messages = {
         2: 'Programador',
         3: 'Ingeniero',
         4: 'Arquitecto',
-        5: 'Director técnico'
+        5: 'Director técnico',
       },
       newVersionAvailable: 'Nueva versión encontrada',
       currentVersion: 'Versión actual',
@@ -1331,7 +1352,7 @@ export const messages = {
       advancedModelUsage: '高级模型使用量',
       basicModelUsage: '普通模型使用量',
       cannotGetUsage: '无法获取',
-      cursorHistoryDownload: 'Descargar versiones históricas de Cursor'
+      cursorHistoryDownload: 'Descargar versiones históricas de Cursor',
     },
     login: {
       title: 'Iniciar sesión',
@@ -1354,7 +1375,8 @@ export const messages = {
       userNotExists: 'Este correo no está registrado, por favor regístrese primero',
       emailInvalid: 'Ingrese una dirección de correo electrónico válida',
       emailUnsupported: 'Este dominio de correo electrónico no es compatible',
-      passwordInvalid: 'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
+      passwordInvalid:
+        'Password must contain at least 8 characters, including uppercase, lowercase letters and numbers',
     },
     settings: {
       activation: 'Activación',
@@ -1364,7 +1386,7 @@ export const messages = {
       currentPassword: 'Contraseña actual',
       newPassword: 'Nueva contraseña',
       confirmPassword: 'Confirmar contraseña',
-      about: 'Acerca de'
+      about: 'Acerca de',
     },
     history: {
       title: 'Historial de operaciones',
@@ -1377,7 +1399,7 @@ export const messages = {
       datePlaceholder: 'Seleccionar rango de fechas',
       clearHistory: 'Limpiar historial',
       clearSuccess: 'Historial borrado exitosamente',
-      clearFailed: 'Error al borrar historial'
+      clearFailed: 'Error al borrar historial',
     },
     message: {
       pleaseInputActivationCode: 'Por favor ingrese el código de activación',
@@ -1390,7 +1412,7 @@ export const messages = {
       pleaseInputPassword: 'Por favor complete todos los campos de contraseña',
       passwordNotMatch: 'Las contraseñas no coinciden',
       passwordChangeSuccess: 'Contraseña cambiada exitosamente',
-      passwordChangeFailed: 'Cambio de contraseña fallido'
+      passwordChangeFailed: 'Cambio de contraseña fallido',
     },
     systemControl: {
       title: 'Control del sistema',
@@ -1413,26 +1435,27 @@ export const messages = {
         applyHookSuccess: 'Hook aplicado con éxito',
         restoreHookSuccess: 'Hook restaurado con éxito',
         cursorRunning: 'Cursor en ejecución, por favor guarde su trabajo antes de continuar!',
-        forceKillConfirm: 'He guardado, forzar cierre'
+        forceKillConfirm: 'He guardado, forzar cierre',
       },
       history: {
         disableUpdate: 'Desactivar actualización automática',
         restoreUpdate: 'Restaurar actualización automática',
         applyHook: 'Aplicar hook',
-        restoreHook: 'Restaurar hook'
-      }
+        restoreHook: 'Restaurar hook',
+      },
     },
     about: {
       title: 'Acerca de',
       version: 'Versión',
       appName: 'Cursor Pool',
       copyright: 'Copyright',
-      license: 'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
+      license:
+        'Open-sourced under MIT License. Copyright notice must be preserved when modified or distributed.',
       allRightsReserved: 'All Rights Reserved',
     },
     language: {
       title: 'Configuración de idioma',
-      switch: 'Cambiar idioma'
+      switch: 'Cambiar idioma',
     },
     common: {
       logout: 'Cerrar sesión',
@@ -1440,10 +1463,11 @@ export const messages = {
       copyFailed: 'Copia fallida',
       forceClose: 'Guardar y cerrar forzadamente',
       cursorRunning: 'Cursor en ejecución',
-      cursorRunningMessage: 'Detected Cursor is running, please save the project that has not been changed before continuing!',
+      cursorRunningMessage:
+        'Detected Cursor is running, please save the project that has not been changed before continuing!',
       closingCursor: 'Cerrando Cursor...',
       forgotPassword: 'Mot de passe oublié?',
-      confirmRestart: 'Reiniciar ahora'
+      confirmRestart: 'Reiniciar ahora',
     },
     inbound: {
       title: '线路',
@@ -1451,9 +1475,9 @@ export const messages = {
       switchSuccess: '已切换到线路: {name}',
       switchFailed: '切换线路失败',
       restartNeeded: '为确保新线路配置生效，建议重启应用',
-      defaultInbound: '默认线路'
-    }
-  }
+      defaultInbound: '默认线路',
+    },
+  },
 } as const
 
-export type MessageSchema = typeof messages['zh-CN']
+export type MessageSchema = (typeof messages)['zh-CN']

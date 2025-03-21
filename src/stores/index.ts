@@ -9,4 +9,4 @@ export { useArticleStore } from './article'
 export { useAppCloseStore } from './app-close'
 
 // 导出类型
-export type { HistoryRecord, HistoryAccount } from './types' 
+export type { HistoryRecord, HistoryAccount } from './types'

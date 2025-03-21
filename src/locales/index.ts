@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue'
 import type { NLocale, NDateLocale } from 'naive-ui'
-import { 
-  zhCN, 
+import {
+  zhCN,
   dateZhCN,
   enUS,
   dateEnUS,
@@ -16,7 +16,7 @@ import {
   ruRU,
   dateRuRU,
   esAR,
-  dateEsAR
+  dateEsAR,
 } from 'naive-ui'
 import { messages } from './messages'
 import { getUserData, setUserData } from '@/api'
@@ -33,43 +33,43 @@ export const locales: Record<Language, LocaleConfig> = {
   'zh-CN': {
     name: '简体中文',
     locale: zhCN,
-    dateLocale: dateZhCN
+    dateLocale: dateZhCN,
   },
   'en-US': {
     name: 'English',
     locale: enUS,
-    dateLocale: dateEnUS
+    dateLocale: dateEnUS,
   },
   'ja-JP': {
     name: '日本語',
     locale: jaJP,
-    dateLocale: dateJaJP
+    dateLocale: dateJaJP,
   },
   'fr-FR': {
     name: 'Français',
     locale: frFR,
-    dateLocale: dateFrFR
+    dateLocale: dateFrFR,
   },
   'de-DE': {
     name: 'Deutsch',
     locale: deDE,
-    dateLocale: dateDeDE
+    dateLocale: dateDeDE,
   },
   'ko-KR': {
     name: '한국어',
     locale: koKR,
-    dateLocale: dateKoKR
+    dateLocale: dateKoKR,
   },
   'ru-RU': {
     name: 'Русский',
     locale: ruRU,
-    dateLocale: dateRuRU
+    dateLocale: dateRuRU,
   },
   'es-AR': {
     name: 'Español',
     locale: esAR,
-    dateLocale: dateEsAR
-  }
+    dateLocale: dateEsAR,
+  },
 }
 
 // 默认使用中文
@@ -79,8 +79,8 @@ export const currentLang = ref<Language>('zh-CN')
 export async function initLanguage() {
   try {
     // 从后端获取语言设置
-    const lang = await getUserData('user.info.lang') as Language | null
-    
+    const lang = (await getUserData('user.info.lang')) as Language | null
+
     // 如果后端存在语言设置且为受支持的语言则使用该设置
     if (lang && Object.keys(locales).includes(lang)) {
       currentLang.value = lang
@@ -97,7 +97,7 @@ export function useI18n() {
   const setLanguage = async (lang: Language) => {
     // 更新当前语言状态
     currentLang.value = lang
-    
+
     // 保存到后端数据库
     try {
       await setUserData('user.info.lang', lang)
@@ -110,7 +110,7 @@ export function useI18n() {
   const t = (key: string, params?: Record<string, any>) => {
     const keys = key.split('.')
     let result: any = messages[currentLang.value]
-    
+
     // 遍历键路径获取翻译
     for (const k of keys) {
       if (result && typeof result === 'object' && k in result) {
@@ -120,14 +120,14 @@ export function useI18n() {
         return key
       }
     }
-    
+
     // 如果结果是字符串且有参数，替换参数
     if (typeof result === 'string' && params) {
       return result.replace(/{([^}]+)}/g, (match, name) => {
         return params[name] !== undefined ? String(params[name]) : match
       })
     }
-    
+
     return result as string
   }
 
@@ -135,6 +135,6 @@ export function useI18n() {
     currentLang,
     setLanguage,
     i18n: computed(() => messages[currentLang.value]),
-    t
+    t,
   }
-} 
+}

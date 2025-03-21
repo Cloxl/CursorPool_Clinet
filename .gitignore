@@ -37,3 +37,7 @@ node_modules/.pnpm
 
 # debug md
 DEBUG.md
+
+# ESLint and Prettier cache files
+.eslintcache
+.prettierrc.cache

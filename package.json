@@ -8,7 +8,10 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "generate-icons": "tauricon"
+    "generate-icons": "tauricon",
+    "lint:fix": "eslint --ext .js,.ts,.vue src --fix",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.2.0",
@@ -37,10 +40,20 @@
     "@tauri-apps/tauricon": "^1.0.3",
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^22.13.2",
+    "@unocss/preset-attributify": "0.58.0",
+    "@unocss/preset-icons": "0.58.0",
+    "@unocss/preset-uno": "0.58.0",
+    "@unocss/transformer-directives": "0.58.0",
     "@vicons/antd": "^0.13.0",
     "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.1",
+    "prettier": "^3.2.5",
     "typescript": "~5.6.2",
+    "unocss": "0.58.0",
     "vite": "^6.0.3",
     "vue-tsc": "^2.1.10"
   }

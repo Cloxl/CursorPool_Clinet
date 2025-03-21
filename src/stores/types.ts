@@ -17,4 +17,4 @@ export interface HistoryAccount {
   lastUsed: number
   gpt4MaxUsage?: number | null
   gpt35MaxUsage?: number | null
-} 
+}

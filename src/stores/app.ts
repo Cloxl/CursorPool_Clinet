@@ -1,6 +1,12 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import { getPublicInfo, checkDisclaimerAccepted, setDisclaimerAccepted, getUserData, setUserData } from '@/api'
+import {
+  getPublicInfo,
+  checkDisclaimerAccepted,
+  setDisclaimerAccepted,
+  getUserData,
+  setUserData,
+} from '@/api'
 import type { PublicInfo } from '@/api/types'
 import { darkTheme } from 'naive-ui'
 import { version as packageVersion } from '../../package.json'
@@ -17,14 +23,14 @@ export const useAppStore = defineStore('app', () => {
   const isLoading = ref(false)
   const appVersion = ref('')
   const publicInfo = ref<PublicInfo | null>(null)
-  
+
   // 声明状态
   const showDisclaimerModal = ref(false)
   const disclaimerContent = ref(disclaimerMd)
   const disclaimerCountdown = ref(3)
   const canConfirmDisclaimer = ref(false)
   const disclaimerLoading = ref(false)
-  
+
   // 引导状态
   const tourAccepted = ref<string | null>(null)
   const tourLoading = ref(false)
@@ -34,9 +40,9 @@ export const useAppStore = defineStore('app', () => {
 
   // Getters
   const isDarkMode = computed(() => theme.value === 'dark')
-  const currentTheme = computed(() => isDarkMode.value ? darkTheme : null)
+  const currentTheme = computed(() => (isDarkMode.value ? darkTheme : null))
   const currentLocale = computed(() => language.value)
-  
+
   // 引导状态的计算属性
   const shouldShowTour = computed(() => {
     return tourAccepted.value !== 'true'
@@ -97,7 +103,7 @@ export const useAppStore = defineStore('app', () => {
   function setAppVersion(version: string) {
     appVersion.value = version
   }
-  
+
   /**
    * 获取引导状态
    */
@@ -105,7 +111,7 @@ export const useAppStore = defineStore('app', () => {
     try {
       tourLoading.value = true
       const response = await getUserData('user.tour.accepted')
-      
+
       // 处理不同类型的响应
       if (response === null) {
         // 如果状态为null，设置为false
@@ -116,8 +122,8 @@ export const useAppStore = defineStore('app', () => {
         // 尝试处理对象格式的响应
         try {
           // 使用类型断言避免TypeScript错误
-          const responseObj = response as any;
-          
+          const responseObj = response as any
+
           if (responseObj.data && responseObj.data.value === null) {
             console.log('引导状态响应对象中data.value为null，设置为false')
             await setTourStatus('false')
@@ -135,7 +141,7 @@ export const useAppStore = defineStore('app', () => {
         await setTourStatus('false')
         tourAccepted.value = 'false'
       }
-      
+
       return tourAccepted.value
     } catch (error) {
       console.error('获取引导状态失败:', error)
@@ -144,7 +150,7 @@ export const useAppStore = defineStore('app', () => {
       tourLoading.value = false
     }
   }
-  
+
   /**
    * 设置引导状态
    */
@@ -161,7 +167,7 @@ export const useAppStore = defineStore('app', () => {
       tourLoading.value = false
     }
   }
-  
+
   /**
    * 完成引导
    */
@@ -197,23 +203,23 @@ export const useAppStore = defineStore('app', () => {
     } catch (error) {
       console.error('加载应用版本失败:', error)
     }
-    
+
     // 初始化引导状态
-    fetchTourStatus().catch(error => {
+    fetchTourStatus().catch((error) => {
       console.error('初始化引导状态失败:', error)
     })
   }
-  
+
   /**
    * 获取免责声明（检查数据库中是否已接受）
    */
   async function fetchDisclaimer() {
     try {
       disclaimerLoading.value = true
-      
+
       // 在应用启动时尝试删除本地存储的免责声明状态
       localStorage.removeItem('disclaimer_accepted')
-      
+
       // 启动倒计时
       const timer = setInterval(() => {
         disclaimerCountdown.value--
@@ -222,13 +228,13 @@ export const useAppStore = defineStore('app', () => {
           clearInterval(timer)
         }
       }, 1000)
-      
+
       // 从数据库检查是否已接受免责声明
       const accepted = await checkDisclaimerAccepted()
       if (!accepted) {
         showDisclaimerModal.value = true
       }
-      
+
       return disclaimerContent.value
     } catch (error) {
       console.error('获取免责声明失败:', error)
@@ -237,7 +243,7 @@ export const useAppStore = defineStore('app', () => {
       disclaimerLoading.value = false
     }
   }
-  
+
   /**
    * 确认免责声明
    */
@@ -246,13 +252,13 @@ export const useAppStore = defineStore('app', () => {
       // 将接受状态保存到数据库
       await setDisclaimerAccepted()
       showDisclaimerModal.value = false
-      
+
       // 确认免责声明后检查引导状态
-      await new Promise(resolve => setTimeout(resolve, 300))
-      
+      await new Promise((resolve) => setTimeout(resolve, 300))
+
       // 获取最新的引导状态
       await fetchTourStatus()
-      
+
       return true
     } catch (error) {
       console.error('保存免责声明状态失败:', error)
@@ -270,7 +276,7 @@ export const useAppStore = defineStore('app', () => {
       showAllButtons.value = false
     }
   }
-  
+
   // 设置按钮显示状态
   async function setButtonVisibility(show: boolean) {
     try {
@@ -296,13 +302,13 @@ export const useAppStore = defineStore('app', () => {
     tourAccepted,
     tourLoading,
     showAllButtons,
-    
+
     // Getters
     isDarkMode,
     currentTheme,
     currentLocale,
     shouldShowTour,
-    
+
     // Actions
     toggleTheme,
     setTheme,
@@ -317,6 +323,6 @@ export const useAppStore = defineStore('app', () => {
     setTourStatus,
     completeTour,
     initButtonSettings,
-    setButtonVisibility
+    setButtonVisibility,
   }
-}) 
+})
