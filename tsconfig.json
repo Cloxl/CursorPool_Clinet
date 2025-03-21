@@ -7,7 +7,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node", // 改为node而不是bundler
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -21,13 +21,14 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Vue */
-    "types": ["naive-ui/volar", "vue-router"],
+    "types": ["naive-ui/volar", "vue-router", "vite/client"], // 添加vite/client
 
     "paths": {
       "@/*": ["src/*"]
     },
 
-    "baseUrl": "."
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true // 添加这个
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

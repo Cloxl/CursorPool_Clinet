@@ -11,35 +11,35 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: '/dashboard'
+        redirect: '/dashboard',
       },
       {
         path: 'dashboard',
         name: 'dashboard',
-        component: DashboardView
+        component: DashboardView,
       },
       {
         path: 'history',
         name: 'history',
-        component: HistoryView
+        component: HistoryView,
       },
       {
         path: 'accounts',
         name: 'accounts',
-        component: HistoryAccountsView
+        component: HistoryAccountsView,
       },
       {
         path: 'settings',
         name: 'settings',
-        component: () => import('../views/SettingsView.vue')
-      }
-    ]
-  }
+        component: () => import('../views/SettingsView.vue'),
+      },
+    ],
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 })
 
 export default router

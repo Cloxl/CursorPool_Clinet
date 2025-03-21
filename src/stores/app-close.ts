@@ -9,10 +9,10 @@ export const useAppCloseStore = defineStore('app-close', () => {
   const showConfirmModal = ref(false)
   const closeType = ref<'minimize' | 'exit'>('exit')
   const savePreference = ref(true)
-  
+
   // 获取应用窗口
   const appWindow = Window.getCurrent()
-  
+
   /**
    * 初始化时获取设置
    */
@@ -26,7 +26,7 @@ export const useAppCloseStore = defineStore('app-close', () => {
       console.error('获取关闭类型设置失败:', error)
     }
   }
-  
+
   /**
    * 处理应用关闭请求
    */
@@ -34,7 +34,7 @@ export const useAppCloseStore = defineStore('app-close', () => {
     try {
       // 检查数据库中是否有关闭类型设置
       const savedCloseType = await getUserData('system.close.type')
-      
+
       if (savedCloseType === 'minimize') {
         // 如果设置为最小化，直接最隐藏
         await appWindow.hide()
@@ -51,7 +51,7 @@ export const useAppCloseStore = defineStore('app-close', () => {
       showConfirmModal.value = true
     }
   }
-  
+
   /**
    * 确认关闭应用
    */
@@ -61,14 +61,14 @@ export const useAppCloseStore = defineStore('app-close', () => {
       if (savePreference.value) {
         await setUserData('system.close.type', closeType.value)
       }
-      
+
       // 根据选择执行相应操作
       if (closeType.value === 'minimize') {
         await appWindow.hide()
       } else {
         await exit(0)
       }
-      
+
       // 关闭模态窗
       showConfirmModal.value = false
     } catch (error) {
@@ -76,7 +76,7 @@ export const useAppCloseStore = defineStore('app-close', () => {
       throw error
     }
   }
-  
+
   /**
    * 保存关闭类型设置
    */
@@ -113,14 +113,14 @@ export const useAppCloseStore = defineStore('app-close', () => {
       return false
     }
   }
-  
+
   /**
    * 取消关闭应用
    */
   function cancelClose() {
     showConfirmModal.value = false
   }
-  
+
   return {
     showConfirmModal,
     closeType,
@@ -129,6 +129,6 @@ export const useAppCloseStore = defineStore('app-close', () => {
     confirmClose,
     cancelClose,
     initSettings,
-    saveCloseType
+    saveCloseType,
   }
-}) 
+})

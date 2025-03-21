@@ -10,7 +10,7 @@ export interface ApiResponse<T> {
 export interface UserInfo {
   totalCount: number
   usedCount: number
-  expireTime: string  // 修改为字符串类型
+  expireTime: string // 修改为字符串类型
   level: number
   isExpired: boolean
   username: string
@@ -80,7 +80,7 @@ export interface CheckUserRequest {
 // 发送验证码请求
 export interface SendCodeRequest {
   email: string
-  type: string  // register或reset
+  type: string // register或reset
 }
 
 // 注册请求
@@ -181,12 +181,12 @@ export interface BugReportRequest {
 
 // 确保 CursorUserInfo 使用正确的属性名
 export interface CursorUserInfo {
-  email: string;
-  email_verified: boolean;
-  name: string;
-  sub: string;
-  updated_at: string; // 确保使用下划线命名
-  picture: string | null;
+  email: string
+  email_verified: boolean
+  name: string
+  sub: string
+  updated_at: string // 确保使用下划线命名
+  picture: string | null
 }
 
 // 历史记录条目
@@ -212,9 +212,9 @@ export interface HistoryAccountRecord {
 
 // 公告数据结构
 export interface Article {
-  id: number;
-  title: string;
-  content: string;
+  id: number
+  title: string
+  content: string
 }
 
 // 添加公告相关接口到现有ApiResponse类型

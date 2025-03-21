@@ -1,15 +1,15 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import { 
-  getUserInfo, 
-  login as apiLogin, 
-  register as apiRegister, 
+import {
+  getUserInfo,
+  login as apiLogin,
+  register as apiRegister,
   logout as apiLogout,
   activate as apiActivate,
   changePassword as apiChangePassword,
   resetPassword as apiResetPassword,
   checkAdminPrivileges,
-  checkIsWindows
+  checkIsWindows,
 } from '@/api'
 import type { UserInfo } from '@/api/types'
 
@@ -19,11 +19,11 @@ export const useUserStore = defineStore('user', () => {
   const isCheckingLogin = ref(true)
   const userInfo = ref<UserInfo | null>(null)
   const loginError = ref('')
-  
+
   // 添加管理员权限状态
   const isAdmin = ref<boolean | null>(null)
   const isCheckingAdmin = ref(false)
-  
+
   const activationCode = ref('')
   const activationLoading = ref(false)
   const activationError = ref('')
@@ -32,7 +32,7 @@ export const useUserStore = defineStore('user', () => {
   const username = computed(() => userInfo.value?.username || '')
   const expiryDate = computed(() => userInfo.value?.expireTime || '')
   const memberLevel = computed(() => userInfo.value?.level || 1)
-  
+
   // 计算用户积分
   const userCredits = computed(() => {
     if (!userInfo.value) {
@@ -40,7 +40,7 @@ export const useUserStore = defineStore('user', () => {
     }
     return (userInfo.value.totalCount - userInfo.value.usedCount) * 50
   })
-  
+
   /**
    * 检查是否以管理员权限运行
    */
@@ -49,7 +49,7 @@ export const useUserStore = defineStore('user', () => {
       isCheckingAdmin.value = true
       const adminStatus = await checkAdminPrivileges()
       isAdmin.value = adminStatus
-      
+
       // 如果不是管理员，检查是否是 Windows 平台
       if (!adminStatus) {
         const isWinPlatform = await checkIsWindows()
@@ -59,7 +59,7 @@ export const useUserStore = defineStore('user', () => {
           isAdmin.value = true
         }
       }
-      
+
       return isAdmin.value
     } catch (error) {
       console.error('检查管理员权限失败:', error)
@@ -116,12 +116,12 @@ export const useUserStore = defineStore('user', () => {
       if (response && response.token) {
         // 保存token后调用检查登录状态接口获取用户信息
         await checkLoginStatus()
-        
+
         // 如果获取用户信息失败，尝试直接登录
         if (!isLoggedIn.value) {
           await login(email, password, spread)
         }
-        
+
         return true
       }
       return false
@@ -140,13 +140,13 @@ export const useUserStore = defineStore('user', () => {
       userInfo.value = null
       isLoggedIn.value = false
       loginError.value = ''
-      
+
       // 调用登出API
       await apiLogout()
-      
+
       // 触发一个全局事件，通知应用用户已登出
       window.dispatchEvent(new CustomEvent('user-logout'))
-      
+
       return true
     } catch (error) {
       console.error('Logout failed:', error)
@@ -161,15 +161,15 @@ export const useUserStore = defineStore('user', () => {
     try {
       activationLoading.value = true
       activationError.value = ''
-      
+
       await apiActivate(code)
-      
+
       // 激活成功后刷新用户信息
       await checkLoginStatus()
-      
+
       // 重置激活码状态
       activationCode.value = ''
-      
+
       return true
     } catch (error) {
       activationError.value = error instanceof Error ? error.message : '激活失败'
@@ -207,7 +207,7 @@ export const useUserStore = defineStore('user', () => {
       throw error
     }
   }
-  
+
   /**
    * 检查积分是否足够
    */
@@ -227,13 +227,13 @@ export const useUserStore = defineStore('user', () => {
     activationCode,
     activationLoading,
     activationError,
-    
+
     // Getters
     username,
     expiryDate,
     memberLevel,
     userCredits,
-    
+
     // Actions
     checkLoginStatus,
     login,
@@ -245,4 +245,4 @@ export const useUserStore = defineStore('user', () => {
     checkCredits,
     checkIsAdmin,
   }
-}) 
+})

@@ -1,4 +1,4 @@
 export interface PendingForceKillAction {
-  type: 'account' | 'machine' | 'quick' | 'hook';
-  params?: any;
-} 
+  type: 'account' | 'machine' | 'quick' | 'hook'
+  params?: any
+}
